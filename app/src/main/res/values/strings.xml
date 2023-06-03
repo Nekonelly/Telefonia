@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Telefonia</string>
+    <string name="action_broadcast">om.example.BroadcastReceiver.MIBROACAST</string>
+</resources>

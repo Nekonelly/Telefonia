@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/lblProMensaje"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/lblProMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mnesaje Programado:"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenDif"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txtMen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mensaje"
+        app:layout_constraintBottom_toTopOf="@+id/btnProMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum"></EditText>
+
+    <Button
+        android:id="@+id/btnProMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnProMensaje"
+        android:text="Programar Mensaje"
+        app:layout_constraintTop_toBottomOf="@+id/txtMen"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblNumeroGuardado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMensaje" />
+
+    <TextView
+        android:id="@+id/lblNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="452dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumeroGuardado" />
+
+    <Button
+        android:id="@+id/btnMenDif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnMenDif"
+        android:text="Enviar mensaje y difusion"
+        app:layout_constraintTop_toBottomOf="@+id/btnProMensaje"
+        tools:layout_editor_absoluteX="0dp"></Button>
+
+    <EditText
+        android:id="@+id/txtNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:hint="Numero"
+        app:layout_constraintBottom_toTopOf="@+id/txtMen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+</androidx.constraintlayout.widget.ConstraintLayout>
